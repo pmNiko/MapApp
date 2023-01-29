@@ -1,0 +1,13 @@
+import axios from "axios";
+
+const searchApi = axios.create({
+    baseURL: 'https://api.mapbox.com/geocoding/v5/mapbox.places',
+    params: {
+        limit: 5,
+        language: 'es',
+        access_token: 'pk.eyJ1Ijoibmlrb2Rldjg5IiwiYSI6ImNsZGR3MW1vdzA1bnUzcGx5bHFnN2NweHoifQ.bJZYcWePN-71V3G_NucoAw'
+    }
+})
+
+
+export default searchApi
